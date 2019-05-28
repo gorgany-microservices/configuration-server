@@ -1,0 +1,11 @@
+server:
+  port: ${SERVER_PORT}
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gorgany-microservices/configuration
+          search-paths: catalogue, cart, order
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
