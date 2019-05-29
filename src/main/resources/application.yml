@@ -6,6 +6,6 @@ spring:
       server:
         git:
           uri: https://github.com/gorgany-microservices/configuration
-          search-paths: catalogue, cart, order
+          search-paths: /
           username: ${GIT_USERNAME}
           password: ${GIT_PASSWORD}
